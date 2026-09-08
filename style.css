@@ -477,6 +477,83 @@ main {
     font-size: 0.9rem;
 }
 
+/* =====================================================
+   BOTÃO ACESSE
+===================================================== */
+
+.access-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 22px;
+
+    padding: 10px 18px;
+
+    border: 1px solid var(--primary);
+
+    border-radius: 8px;
+
+    background: rgba(0, 229, 255, 0.06);
+
+    color: var(--primary);
+
+    font-family: monospace;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    text-decoration: none;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.access-button .arrow {
+    font-size: 18px;
+
+    line-height: 1;
+
+    transition:
+        transform 0.25s ease;
+}
+
+
+.access-button:hover {
+    background: var(--primary);
+
+    color: var(--background);
+
+    box-shadow:
+        0 0 20px rgba(0, 229, 255, 0.25);
+
+    transform: translateY(-2px);
+}
+
+
+.access-button:hover .arrow {
+    transform: translateX(4px);
+}
+
+
+/* Acessibilidade: foco pelo teclado */
+
+.access-button:focus-visible {
+    outline: 2px solid var(--primary);
+
+    outline-offset: 4px;
+}
+
 
 /* =====================================================
    FOOTER
